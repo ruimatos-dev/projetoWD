@@ -21,4 +21,9 @@ public class VendedorService {
 	public void Lascou() {
 		
 	}
+
+	public Vendedor findById(Integer id) {
+		return repoVendedor.findById(id).orElse(null);
+	}
+
 }

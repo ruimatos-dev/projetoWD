@@ -12,24 +12,24 @@ public class Vendedor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Integer id;
 	private String nome;
 	
 	public Vendedor() {
 				
 	}
 
-	public Vendedor(Long id, String nome) {
+	public Vendedor(Integer id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

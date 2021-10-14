@@ -1,12 +1,12 @@
 package com.wd.projeto01.dto;
 
-public class VendedorDto {
+public class VendedorDTO {
        
     private String nome;
        
-    public VendedorDto() {}
+    public VendedorDTO() {}
     
-    public VendedorDto(String nome) {
+    public VendedorDTO(String nome) {
     	super();
     	this.nome = nome;
     }
