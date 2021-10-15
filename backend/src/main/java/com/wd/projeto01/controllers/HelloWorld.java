@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorld {
 	
 	@GetMapping
-	public ResponseEntity<List<String>> helloWorld(){
-		List<String> list = new ArrayList<String>();
+	public ResponseEntity<List<String>> helloWord(){
+		List<String> list = new ArrayList();
 		
-		String nome = "Alex";
-				
-		list.addAll(Arrays.asList("Rui", "Roberio", "Benedilson", "Jocile", "Alex"));
+		String nome = "Eu";
+		
+		list.addAll(Arrays.asList("Rui", "Robério", "Eu", "Benedilson", "Jocilé", "Eu"));
 		
 		//remover elemento(s) de uma lista se essa lista contiver o elemento
 		list.removeIf(a -> a.equals(nome));
-		return  ResponseEntity.ok(list);
+		
+		return ResponseEntity.ok(list);
 	}
-
 }

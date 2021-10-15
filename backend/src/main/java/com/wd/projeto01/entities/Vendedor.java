@@ -15,6 +15,7 @@ public class Vendedor {
 	private Integer id;
 	private String nome;
 	
+	
 	public Vendedor() {
 				
 	}
@@ -22,7 +23,7 @@ public class Vendedor {
 	public Vendedor(Integer id, String nome) {
 		super();
 		this.id = id;
-		this.nome = nome;
+		this.nome = nome;		
 	}
 
 	public Integer getId() {
@@ -42,3 +43,4 @@ public class Vendedor {
 	}
 		
 }
+
