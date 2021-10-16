@@ -15,11 +15,19 @@ public class HelloWorld {
 	
 	@GetMapping
 	public ResponseEntity<List<String>> helloWord(){
+<<<<<<< HEAD
 		List<String> list = new ArrayList<String>();
 		
 		String nome = "Eu";
 		
 		list.addAll(Arrays.asList("Rui Matos", "Robério Moreira", "Eu", "Benedilson de Jesus", "Jocilé Serra", "Eu", "Alex Fapa"));
+=======
+		List<String> list = new ArrayList();
+		
+		String nome = "Eu";
+		
+		list.addAll(Arrays.asList("Rui", "Robério", "Eu", "Benedilson", "Jocilé", "Eu"));
+>>>>>>> 4b6557477fa1fc025774f5c42e3160d4d975fe44
 		
 		//remover elemento(s) de uma lista se essa lista contiver o elemento
 		list.removeIf(a -> a.equals(nome));

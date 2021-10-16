@@ -28,8 +28,6 @@ public class VendasController {
 				.collect(Collectors.toList());
 		
 		return  ResponseEntity.ok(vendas);
-		
 	}
-	
 
 }

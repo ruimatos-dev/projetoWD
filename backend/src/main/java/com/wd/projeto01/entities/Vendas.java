@@ -77,6 +77,7 @@ public class Vendas {
 	public void setData(LocalDate data) {
 		this.data = data;
 	}
+<<<<<<< HEAD
 	
 	public Vendedor getVendedor( ) {
 		return this.vendedor;
@@ -85,5 +86,7 @@ public class Vendas {
 	public void setVendedor(Vendedor vendedor) {
 		this.vendedor = vendedor;
 	}
+=======
+>>>>>>> 4b6557477fa1fc025774f5c42e3160d4d975fe44
 
 }

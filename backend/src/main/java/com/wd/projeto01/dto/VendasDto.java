@@ -40,10 +40,11 @@ public class VendasDto {
 	public Integer getQtdVendas() {
 		return qtdVendas;
 	}
-	
+
 	public void setQtdVendas(Integer qtdVendas) {
 		this.qtdVendas = qtdVendas;
 	}
+
 
 	public Double getValor() {
 		return valor;
