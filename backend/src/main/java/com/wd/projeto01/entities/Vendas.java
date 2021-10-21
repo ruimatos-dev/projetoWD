@@ -27,6 +27,7 @@ public class Vendas {
 	private Vendedor vendedor;
 
 	public Vendas() {
+		
 	}
 
 	public Vendas(Integer id, Integer visitas, Integer qtdVendas, Double valor, LocalDate data) {

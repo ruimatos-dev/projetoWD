@@ -1,6 +1,6 @@
 package com.wd.projeto01.dto;
 
-import java.time.LocalDate;
+import com.wd.projeto01.entities.Vendas;
 
 public class VendasDto {
 	
@@ -8,17 +8,27 @@ public class VendasDto {
 	private Integer visitas;
 	private Integer qtdVendas;
 	private Double valor;
-	private LocalDate data;
 	private String nomeVendedor;
 	
-	public VendasDto() {}
+	public VendasDto() {
+		
+	}
 
-	public VendasDto(Integer id, Integer visitas, Double valor,String nomeVendedor) {
+	public VendasDto(Integer id, Integer visitas, Integer qtdVendas, Double valor,String nomeVendedor) {
 		super();
 		this.id = id;
 		this.visitas = visitas;
+		this.qtdVendas = qtdVendas;
 		this.valor = valor;
 		this.nomeVendedor = nomeVendedor;
+	}
+	
+	public VendasDto(Vendas vendas) {
+		this.id = vendas.getId();
+		this.visitas =vendas.getVisitas();
+		this.qtdVendas = vendas.getQtdVendas();
+		this.valor = vendas.getValor();
+		this.nomeVendedor = vendas.getVendedor().getNome();
 	}
 	
 	public Integer getId() {
@@ -45,20 +55,13 @@ public class VendasDto {
 		this.qtdVendas = qtdVendas;
 	}
 
-
 	public Double getValor() {
 		return valor;
 	}
 
-	public void setValor(Double valor) {
-		this.valor = valor;
-	}
-
-
-	public void setData(LocalDate data) {
-		this.data = data;
-	}
-
+    public void setValor(Double valor) {
+    	this.valor = valor;
+    }
 	public String getNomeVendedor() {
 		return nomeVendedor;
 	}
