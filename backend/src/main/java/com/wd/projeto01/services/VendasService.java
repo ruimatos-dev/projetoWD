@@ -26,4 +26,9 @@ public class VendasService {
         
         return listaVendas.map( venda -> new VendasDto(venda));
 	}
+	
+	public void insert(Vendas vendas) {
+		// TODO Auto-generated method stub
+		
+	}
 }
